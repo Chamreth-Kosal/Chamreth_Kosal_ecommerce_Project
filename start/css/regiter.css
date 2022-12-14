@@ -1,0 +1,60 @@
+.contain {
+    background: rgb(232, 186, 186);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+.nav2 {
+    display: flex;
+}
+
+li,
+.nav1 {
+    display: flex;
+    font-style: none;
+    padding: 20px;
+}
+
+.container {
+    background: rgb(235, 217, 217);
+    padding: 30px;
+    border-radius: 10px;
+    width: 25%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* Full-width inputs */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Set a style for all buttons */
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;  
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}

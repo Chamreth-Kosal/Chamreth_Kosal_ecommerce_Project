@@ -1,0 +1,120 @@
+/* .................style table............ */
+body{
+  overflow: auto;
+}
+.product-contain {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.product-contain table {
+  width: 100%;
+}
+
+.action {
+  text-align: center;
+  width: 100px;
+}
+
+.edit{
+  font-size: 28px;
+  color: blue;
+}
+.delete {
+  font-size: 28px;
+  color: red;
+  margin-left: 15px;
+}
+.edit,.delete:hover{
+  cursor: pointer;
+}
+.button {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.inactive {
+  display: none;
+  overflow-y: auto;
+}
+.active{
+  display: block;
+  overflow-y: visible;
+}
+.bg-blur {
+  background: rgb(65, 63, 63);
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 30;
+  margin: 0;
+  top: 0;
+}
+.dom-container {
+  position: relative;
+}
+
+.form-container{
+  padding: 10px;
+  position: fixed;
+  z-index: 50;
+  top: 0rem;
+  left: 25rem;
+}
+.card {
+  width: 500px;
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+ 
+}
+
+.form-control {
+  margin-top: 10px;
+  height: 48px;
+  border: 2px solid #eee;
+  border-radius: 10px
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #039BE5
+}
+
+.agree-text {
+  font-size: 12px
+}
+
+.terms {
+  font-size: 12px;
+  text-decoration: none;
+  color: #039BE5
+}
+
+.confirm-button, .btn-edit {
+  height: 50px;
+  border-radius: 10px;
+  width: 100%l
+}
+.close-form {
+  position: absolute;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: -10px;
+  background: rgb(246, 165, 165);
+}
+.close-form:hover {
+  cursor: pointer;
+  background: rgb(244, 153, 153);
+}

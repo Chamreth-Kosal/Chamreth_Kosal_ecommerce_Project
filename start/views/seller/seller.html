@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/seller.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+  <title>seller</title>
+</head>
+
+<body>
+  <div class="dom-container">
+    <div class="button">
+      <button class="btn btn-info" onclick="onHandleAdd()" id="btn-add">Add Product</button>
+    </div>
+    <div class="product-contain">
+      <table id="myTable" class="table table-bordered">
+        <thead class="bg-info">
+          <tr class="text-white">
+            <th>UID</th>
+            <th>Product name</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="product-list">
+
+        </tbody>
+      </table>
+    </div>
+    <div id="toggle" class="inactive py-10">
+      <div class="form-container">
+        <div class="d-flex justify-content-center">
+          <div class="card px-1 py-3 position-relative">
+            <div class="close-form" onclick="onHandleCloseToggle()">
+              X
+            </div>
+            <div class="card-body">
+              <h1 class="">Create New Product</h1>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="name" class="mt-2">Product Name</label> <input class="form-control" type="text"
+                      placeholder="Name" id="name">
+                      <small id="name-error" class="mt-1 mb-1 text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="name" class="mt-2">Price</label> <input class="form-control" type="number"
+                      placeholder="Price" id="price">
+                      <small id="price-error" class="mt-1 mb-1 text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="name" class="mt-2">Description</label> <input class="form-control" type="text"
+                      placeholder="Description" id="description">
+                      <small id="desc-error" class="mt-1 mb-1 text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="name" class="mt-2">URL</label> <input class="form-control" type="text"
+                      placeholder="Image Link" id="image">
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-primary btn-block confirm-button" onclick="addNewProduct()" id="confirm-button">Add</button>
+                <button class="btn btn-primary btn-block btn-edit" id="bt-edit" onclick="editProduct()">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-blur">
+      </div>
+    </div>
+
+</body>
+<script src="seller.js"></script>
+
+</html>
