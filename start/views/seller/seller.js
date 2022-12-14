@@ -6,7 +6,7 @@ let products = [
     product_name: "house",
     price: "$455,000,000",
     Description: "6 X 5",
-    image_url: '',
+    image_url: '../../img/house.jpg',
   },
   {
     id: 2,
